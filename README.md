@@ -6,7 +6,7 @@ To find mean and variance of arrival objects from the feeder using probability d
 
 # Theory: 
 
-# 1. Mean (Expectation)
+ #1. Mean (Expectation)
 
 The mean or expected value of a discrete random variable represents its average value, weighted by the probabilities of each possible outcome. It indicates the central tendency or typical value of the variable.
 It is calculated as:
@@ -46,9 +46,35 @@ It is calculated as:
 
 
 # Program: 
+Name: Mohana Priya D
+Reg no: 25016734
+Slot name: 3P1-1
+
+import numpy as np
+L=[int(i)for i in input("Enter arrival data:").split()]
+N=len(L)
+M=max(L)
+x=[]
+f=[]
+for i in range(M+1):
+  c=0
+  for j in range(N):
+    if L[j]==i:
+      c+=1
+  f.append(c)
+  x.append(i)
+sf=np.sum(f)
+p=[f[i] / sf for i in range(M+1)]
+mean=np.inner(x,p)
+EX2=np.inner(np.square(x),p)
+var=EX2-mean**2
+SD=np.sqrt(var)
+print(f"The Mean arrival rate is {mean:.3f}")
+print(f"The Variance of arrival from feeder is {var:.3f}")
+print(f"The Standard deviation of arrival from feeder is {SD:.3f}")
 
 
-
+https://colab.research.google.com/drive/1cg3jwmQeAM4HDvoR9lu1m6RVopc1mMlV?usp=sharing
 
 
 
@@ -56,7 +82,10 @@ It is calculated as:
 
 # Output:
 
-
+Enter arrival data:6 6 6 6 6 8 7 9
+The Mean arrival rate is 6.750
+The Variance of arrival from feeder is 1.188
+The Standard deviation of arrival from feeder is 1.090
 
 # Result: 
 	The mean and variance of arrivals of objects from feeder using probability distribution are calculated. 
