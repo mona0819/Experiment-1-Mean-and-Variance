@@ -46,9 +46,11 @@ It is calculated as:
 
 
 # Program: 
+```
 Name: Mohana Priya D
 Reg no: 25016734
 Slot name: 3P1-1
+```
 
 ```
 import numpy as np
@@ -83,11 +85,13 @@ https://colab.research.google.com/drive/1cg3jwmQeAM4HDvoR9lu1m6RVopc1mMlV?usp=sh
 
 
 # Output:
+```
 
 Enter arrival data:6 6 6 6 6 8 7 9
 The Mean arrival rate is 6.750
 The Variance of arrival from feeder is 1.188
 The Standard deviation of arrival from feeder is 1.090
+```
 
 # Result: 
 	The mean and variance of arrivals of objects from feeder using probability distribution are calculated. 
